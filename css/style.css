@@ -3,9 +3,14 @@
   
     Font Weight: 
     -- Default: 400
+    Medium: 500
+    Semi-bold: 600
+    Bold: 700
 
     Line Height:
     -- Default: 1
+    Small: 1.05
+    Paragraph defaults: 1.6
 
     Font Size(px)
     -- 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -13,7 +18,7 @@
   02: COLORS
     -- Primary: #e67e22;
     -- Tints: #fdf2e9
-    -- Shades
+    -- Shades: #cf711f;
     -- Accents
     -- Grays
     #555
@@ -48,6 +53,29 @@ body {
 /*******************************/
 /* GENERAL REUSEABLE COMPONENT */
 /************************/
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .heading-primary {
   font-size: 5.2rem;
@@ -153,6 +181,7 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
 /************************/
 /* HERO SECTION */
 /************************/
@@ -213,3 +242,17 @@ body {
 .delivered-text span {
   color: #cf711f;
 }
+
+/************************/
+/* HOW IT WORKS SECTION */
+/************************/
+.section-how {
+  padding: 9.8rem 0;
+  background-color: orangered;
+}
+
+/* .section-how div div {
+  padding: 100px;
+  font-size: 50px;
+  background-color: #333;
+} */
