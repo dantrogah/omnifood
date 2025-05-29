@@ -31,6 +31,8 @@
 
   03: SHADOWS
   04: BORDER RADIUS
+   - default: 9px
+   11px
   
   05: WHITEPACE: 
     -- Spacing System (px)
@@ -134,7 +136,7 @@ body {
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-  transition: background-color 0.15s;
+  transition: all 0.15s;
 }
 
 .btn--full:link,
@@ -162,4 +164,8 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 600;
 }
